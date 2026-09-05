@@ -69,44 +69,7 @@ anira/
 
 ---
 
-## 🚀 نشر التطبيق على GitHub Pages
 
-### الطريقة 1 — رفع مباشر من الهاتف (الأسهل)
-
-```
-1. افتح github.com من المتصفح
-2. سجّل دخول ← انقر + New repository
-3. اسم المستودع: anira  ← Public ← Create repository
-4. انقر "uploading an existing file"
-5. ارفع ملف anira-system.html
-6. Commit changes
-7. Settings ← Pages ← Branch: main ← Save
-8. رابطك: https://USERNAME.github.io/anira/anira-system.html
-```
-
-### الطريقة 2 — عبر GitHub CLI (للمتقدمين)
-
-```bash
-# تثبيت gh CLI ثم:
-gh repo create anira --public
-git init && git add .
-git commit -m "feat: Anira v1.4.0"
-git push origin main
-gh api repos/{owner}/anira/pages -X POST -f source[branch]=main
-```
-
-### الطريقة 3 — نشر على Vercel / Netlify (بديل)
-
-```
-1. vercel.com أو netlify.com
-2. Import from GitHub ← اختر المستودع
-3. يتم النشر تلقائياً مع رابط مخصص
-```
-
-> **⚠️ ملاحظة:** GitHub Pages مجاني للمستودعات العامة (Public).
-> لحماية البيانات الحساسة، يُفضّل المستودع الخاص (Private) مع Vercel المجاني.
-
----
 
 ## ⚙️ المتطلبات التقنية | Tech Requirements
 
@@ -130,17 +93,6 @@ HTML5 / CSS3 / Vanilla JavaScript
 ```
 
 ---
-
-## 📱 تغليف كتطبيق Android
-
-استخدم [WebToApp](https://github.com/shiaho777/web-to-app) لتحويل الملف لـ APK:
-
-```yaml
-targetSdk: 28
-file: anira-system.html
-permissions:
-  - INTERNET (للنسخ عبر تيليجرام فقط)
-```
 
 ---
 
