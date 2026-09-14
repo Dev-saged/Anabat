@@ -63,7 +63,6 @@ A complete offline-first web application for registering humanitarian aid proxy 
 
 ```
 anira/
-├── 📄 anira-system.html     ← التطبيق بالكامل (الملف الوحيد)
 └── 📖 README.md             ← هذا الملف
 ```
 
